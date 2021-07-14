@@ -1,0 +1,404 @@
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+.main-header-fixed{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    z-index: 1030;
+}
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 0px;
+  width: 100%;
+  background-color: white;
+}
+
+.main-header__brand {
+    font: 1em 'Poppins', sans-serif;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.main-header__brand__title {
+    font-weight: 800;
+}
+
+.main-header__brand__subtitle {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.main-title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+.main-title__logo{
+    padding-top: 50px;
+    margin-right: 20px;
+}
+.main-title__info{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.main-title__brand{
+    font: 1em 'Poppins', sans-serif;
+    font-size: 4.5rem;
+}
+.main-title__brand__title{
+    font-weight: 600;
+}
+.main-title__brand__subtitle{
+    font-weight: 200;
+}
+
+.main-title__desc{
+    font: 0.9rem 'Poppins', sans-serif;
+}
+.main-title__desc__items{
+    list-style: none;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+}
+
+.main-title__desc__items>li{
+    text-align: center;
+    padding-right:25px;   
+    min-width: 120px;
+}
+
+
+.main-carousal{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+
+.main-carousal__box{
+    box-shadow: 0px 0px 6px gray;
+    min-height: 210px;
+    min-width: 240px;
+    background: white;
+    border-radius: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin:5px;
+    padding: 10px;
+}
+
+.main-carousal__box__title{
+    font:  1em 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    color: lightseagreen;
+}
+
+.main-carousal__box__body{
+    font:  0.8em 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 400;
+}
+
+.main-location__contact {
+    padding-left: 30px;
+}
+
+.main-location__contact__title{
+    font:  2em 'Poppins', sans-serif;
+    font-weight: 400;
+    color: lightseagreen;
+}
+.main-location{
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.main-location__contact__details{
+    font-family: "lausanne",Arial,Helvetica,sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.main-location__contact__details__row {
+    margin: 5px;
+    font:  1em 'Poppins', sans-serif;
+    word-wrap: break-word;
+    max-width: 400px;    
+}
+
+.main-location__contact__details__row__subtitle{
+    font-weight: 600;
+}
+
+
+.main_nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:space-between;
+}
+.main-nav__items {
+    display: flex;
+    flex-direction: row;
+    align-items:space-between;
+    margin: auto;
+    flex-wrap: wrap;
+    align-content: space-between;
+    font: 1em 'Poppins', sans-serif;
+
+}
+
+.main-nav__items>li {
+    list-style: none;
+    text-decoration: none;
+    width: 80px;
+}
+
+.main-nav__items>li>a {
+    text-decoration: none;
+    color:black;
+    
+}
+
+.main-nav__items>li>a:hover {
+    color:lightseagreen;
+}
+
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 600.98px) {
+    .main-nav__items{
+        display: none;
+    }
+    .navbar {
+        background: #fff;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+}
+
+
+
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+.text-small {
+    font-size: 0.9rem !important;
+}
+
+.box {
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+  ;
+    min-height: 200px;
+    width: 50vw;
+    margin: 100px auto;
+    background: white;
+    border-radius: 5px;
+}
+
+body {
+    margin: 0px;
+    min-height: 110vh;
+    background-color: #fff;
+    background-image: linear-gradient(180deg, #fff 0%, #eee 100%);
+}
+
+
+
+
+/*Carousel*/
+.carrousel {
+    font-family: 'Poppins';
+    text-align: center;
+    background-color: white;
+    padding: 4em 0;
+    height: 12em;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .carrousel h2 {
+    margin: 0;
+    margin-top: -1.7em;
+    padding: 0;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 600;
+    color: lightseagreen;
+  }
+  .carrousel .slides {
+    width: 400%;
+    left: 0;
+    padding-left: 0;
+    padding-top: 1em;
+    overflow: hidden;
+    list-style: none;
+    position: relative;
+  
+    -webkit-transition: transform .5s;
+    -moz-transition: transform .5s;
+    -o-transition: transform .5s;
+    transition: transform .5s;
+  }
+  .carrousel .slides li {
+    width: 25%;
+    position: relative;
+    float:left
+  }
+  .carrousel li p{
+    margin-top: 0;
+    word-wrap: break-word;
+    text-align: center;
+    padding:0% 20%;
+    
+  }
+  .carrousel li q {
+    max-width: 90%;
+    margin: auto;
+    color: #666666;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  .carrousel li img {
+    width: 3em;
+    height: 3em;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: -1.5em;
+    margin-right: 0.5em;
+    vertical-align: middle;
+  }
+  .carrousel li span.author {
+    margin-top:0.5em;
+    font-size: 1.2em;
+    color: #777777;
+    display: block;
+  }
+  .carrousel .slidesNavigation {
+    display: block;
+    list-style: none;
+    text-align: center;
+    bottom: 1em;
+    /*--- Centering trick---*/
+      /* Absolute positioning*/
+      position: absolute; 
+      /* Abosulte positioning*/
+      width: 104px; /*This width  is the addition of the width of all the navigations dots - So in this case is   104 because the navigation dots are 26px (width:10px and 6px marginleft + 6 px marginright) and there are 4 dots so 4x26=104 */
+      left: 50%; /*Centering de element*/
+      margin-left: -52px; /*adjusting the centering by applying a negative margin of half of the width*/
+  }
+  .carrousel input {
+    display: none;
+  }
+  .carrousel .slidesNavigation label {
+    float: left;
+    margin: 6px;
+    display: block;
+    height: 10px;
+    width: 10px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: solid 2px lightseagreen;
+    font-size: 0;
+  }
+  /* You have to repeat this with each slide
+  TODO: make it easier with SCSS
+  25% movement 100/slides-num
+  */
+  #radio-1:checked ~ .slides {
+    transform: translateX(0%);
+  }
+  #radio-2:checked ~ .slides {
+    transform: translateX(-25%);
+  }
+  #radio-3:checked ~ .slides {
+    transform: translateX(-50%);
+  }
+  #radio-4:checked ~ .slides {
+    transform: translateX(-75%);
+  }
+  
+  
+  .carrousel .slidesNavigation label:hover {
+     cursor: pointer;
+  }
+  /* You have to repeat this with each slide/dot */
+  .carrousel #radio-1:checked ~ .slidesNavigation label#dotForRadio-1,
+  .carrousel #radio-2:checked ~ .slidesNavigation label#dotForRadio-2,
+  .carrousel #radio-3:checked ~ .slidesNavigation label#dotForRadio-3,
+  .carrousel #radio-4:checked ~ .slidesNavigation label#dotForRadio-4 {
+    background: #2980b9;
+  }
+  
+  @media  (max-width: 796px) {
+    .carrousel{
+      height: 12.5em;
+    }
+  }
+  @media  (max-width: 480px) {
+    .carrousel li p {
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+    }
+    .carrousel li q {
+        font-size: 1em;
+    }
+    .carrousel li img {
+       width:2em;
+       margin-left: -1em;
+       margin-right: 0.25em;
+    }
+    .main-title__brand{
+        font-size: 1.9em;
+    }
+    .main-title__desc{
+        font-size: 0.8em;
+    }
+    
+    #tbd{
+        display: none;
+    }
+    .main-title__logo{
+        margin-right: 0px;
+    }
+    .main-title__desc__items>li{
+        padding-right: 10px;
+        min-width: 110px;
+    } 
+  }
