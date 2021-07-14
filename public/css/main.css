@@ -366,12 +366,10 @@ body {
     background: #2980b9;
   }
   
-  @media  (max-width: 796px) {
+  @media  (max-width: 1199px) {
     .carrousel{
       height: 12.5em;
     }
-  }
-  @media  (max-width: 480px) {
     .carrousel li p {
       padding-left: 0.5em;
       padding-right: 0.5em;
@@ -401,4 +399,26 @@ body {
         padding-right: 10px;
         min-width: 110px;
     } 
+    .mapouter{
+      height: 400px;
+
+    }
+    .main-carousal{
+      flex-direction: column;
+      align-items: center;
+    }
+    .main-carousal__box{
+        width: 50%;
+    }
+    .main-location__marker{
+      
+    }
+    .main-location{
+      flex-direction: column;
+      justify-content: center;
+    }
+    .main-location__contact{
+      padding-left: 0px;
+      margin-left: 0px;
+    }
   }
