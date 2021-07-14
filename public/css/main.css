@@ -202,6 +202,10 @@
 }
 
 
+.mapouter{
+  width: 600px;
+  height: 400px;
+}
 
 
 /*
@@ -383,10 +387,10 @@ body {
        margin-right: 0.25em;
     }
     .main-title__brand{
-        font-size: 1.9em;
+        font-size: 3rem;
     }
     .main-title__desc{
-        font-size: 0.8em;
+        font-size: 1.5rem;
     }
     
     #tbd{
@@ -401,7 +405,7 @@ body {
     } 
     .mapouter{
       height: 400px;
-
+      width: auto;
     }
     .main-carousal{
       flex-direction: column;
@@ -410,6 +414,13 @@ body {
     .main-carousal__box{
         width: 50%;
     }
+    .main-carousal__box__title{
+      font-size: 2em;
+    }
+    .main-carousal__box__body{
+      font-size: 1.2em;
+    }
+
     .main-location__marker{
       
     }
